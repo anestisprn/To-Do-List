@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py,cover
+*.so
+*.egg-info/
+.venv/
+venv/
+env/
+.env/
+.python-version
+
+# Django
+*.sqlite3
+*.log
+media/
+staticfiles/
+
+# IDE (PyCharm, VSCode, etc.)
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*.swo
+
+# Virtual Environment
+bin/
+include/
+lib/
+lib64/
+pip-selfcheck.json
+pyvenv.cfg
+
+# Other
+db.sqlite3

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Task Manager</h1>
+        <p class="lead">Organize your tasks efficiently and boost your productivity.</p>
+        <hr class="my-4">
+        <p>Get started by creating your first task.</p>
+        {% if user.is_authenticated %}
+            <a class="btn btn-primary btn-lg" href="{% url 'task_list' %}" role="button">View Tasks</a>
+        {% else %}
+            <a class="btn btn-primary btn-lg" href="{% url 'login' %}" role="button">Login</a>
+            <a class="btn btn-success btn-lg" href="{% url 'signup' %}" role="button">Sign Up</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
